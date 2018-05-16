@@ -1,20 +1,291 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body id="page-top" ng>
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" [class.background-nav-light]="navIsFixed" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger text-primary" href="#page-top">zeus project</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [class.color-nav-dark]="navIsFixed" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" [class.color-nav-dark]="navIsFixed" href="#about">sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" [class.color-nav-dark]="navIsFixed" href="#services">detalhes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" [class.color-nav-dark]="navIsFixed" href="#portfolio">galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" [class.color-nav-dark]="navIsFixed" href="#contact">contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" [class.color-nav-dark]="navIsFixed">entrar</a>
+          </li>
+        </ul>
+        <a class="nav-link">
+          <i class="fa fa-github fa-2x" [class.color-nav-dark]="navIsFixed"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Conheça agora o projeto</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">O Zeus Project (Projeto Zeus), ou simplesmente Zeus, é um carrinho controlado por aplicativo Android, desenvolvido
+            pela Creative Solutions.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">ver mais!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-white">We've got what you need!</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates
+            and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">At Your Service</h2>
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3">Open Source</h3>
+            <p class="text-muted mb-0">Todo nosso código está aberto para a comunidade.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3">Ready to Ship</h3>
+            <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3">Up to Date</h3>
+            <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3">Feito com amor</h3>
+            <p class="text-muted mb-0">Nosso projeto foi desenvolvido com muita dedicação e carinho!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-0" id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters popup-gallery">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Baixe aqui!</h2>
+      <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Entre em contato!</h2>
+
+          <hr class="my-4">
+          <p>Está pronto para participar do projeto?</p>
+          <p class="mb-5">Mande sua sugestão, contamos com a sua ajuda para aprimorarmos sempre!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fa fa-linkedin fa-3x mb-3 sr-contact"></i>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fa fa-github fa-3x mb-3 sr-contact"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+
+  <!-- Custom scripts for this template -->
+  <!-- <script src="js/creative.min.js"></script> -->
+
+</body>
+
+<!-- <ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="auth-main">
+      <div class="auth-block">
+        <form class="form-horizontal">
+          <div class="form-group row">
+            <label class="col-sm-2 control-label">Usuário(a)</label>
+            <div class="col-sm-10">
+              <input type="username" class="form-control" placeholder="Usuário">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 control-label">Senha</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-default btn-auth">Entrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<hr>
+
+<pre>{{closeResult}}</pre> -->
